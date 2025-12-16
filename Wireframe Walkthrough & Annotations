@@ -1,0 +1,32 @@
+Screen 1: Cloud Security Dashboard (The Overview)
+
+
+Figma Annotations:
+
+Security Health Score (95/100): A quantifiable metric that gives Alex instant situational awareness. It gamifies the security posture, motivating the team to maintain a "Green" state.
+
+"Critical Actions" Queue: Instead of a raw feed of all 142 resources, we filter and display only the items requiring immediate human intervention (e.g., "UserDB Publicly Accessible").
+
+Resource Summary (Right Panel): A quick tally of Active Alerts vs. Total Resources provides scale/context to the current security state.
+
+Screen 2: Critical Alert Investigation (The Problem)
+
+
+Figma Annotations:
+
+Clear Severity Indicators: The "Critical" badge and red background immediately signal urgency. The header clearly translates the technical issue into plain English: "'UserDB' is Publicly Accessible."
+
+Evidence & Technical Details: We visualize the exact configuration error (Allowed IPs: 0.0.0.0/0) alongside a warning explaining why it matters ("Allows access from any IP"). This removes the need to look up IP ranges.
+
+Risk Assessment Block: This section connects the technical error to business impact (e.g., "GDPR violation," "PII data"). This helps Alex justify the urgency to the DevOps team.
+
+Screen 3: Remediation Success State (The Resolution)
+
+
+Figma Annotations:
+
+Visual Confirmation: The UI transitions from Red (Danger) to Green (Safe), providing immediate positive feedback to the user that the threat is neutralized.
+
+Diff View ("Updated"): We explicitly show the change made: The "Allowed IPs" section now highlights the corporate network range (203.0.113.0/24), confirming the specific fix applied.
+
+Resolution Summary: A timestamped audit trail ("Today at 4:52 PM") serves as a record for compliance reporting, proving exactly when the vulnerability was closed.
