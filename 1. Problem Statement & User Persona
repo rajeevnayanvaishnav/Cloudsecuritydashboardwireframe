@@ -1,0 +1,9 @@
+Problem Statement Cloud security engineers often suffer from "Alert Fatigue" caused by dashboards that list thousands of raw logs without context. They struggle to distinguish between low-priority warnings and critical breaches. The core problem is prioritization: engineers need a way to instantly see what requires immediate action and understand the specific "blast radius" without digging through JSON logs.
+
+User Persona: "Alex, the Cloud SecOps Lead"
+
+Role: Responsible for the security posture of a growing SaaS infrastructure.
+
+Pain Point: Wastes hours manually checking if a "Public IP" alert is actually risky or just a test environment.
+
+Needs: A high-level health view for reporting to management, and a low-level evidence view for fixing technical issues.
