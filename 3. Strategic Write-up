@@ -1,0 +1,23 @@
+
+
+Proposed Features & Logic
+
+Health Scoring System: Security is abstract; a score (95/100) makes it concrete. This feature (shown on Screen 1) helps engineers prioritize their day by focusing on "what drops the score."
+
+Contextual Risk Assessment: A raw alert says "Port Open." My design (Screen 2) adds a "Risk Assessment" layer that says why it matters (e.g., "Contains PII," "GDPR Risk"). This bridges the gap between SecOps and Management.
+
+State-Based UI Feedback: The transition from Red (Screen 2) to Green (Screen 3) is a critical psychological feature. It confirms the action was successful without requiring the user to re-scan the resource manually.
+
+Prioritization (MoSCoW)
+
+Must-Have: The "Critical Actions" filtered list. Users cannot function if they have to sort through non-critical logs.
+
+Should-Have: The "Diff View" showing exactly what changed (0.0.0.0/0 $\rightarrow$ Corporate Network). This builds trust in the remediation.Could-Have: Historic trend lines for the Health Score (to show improvement over months).
+
+Success Metrics
+
+Time-to-Triage: Reduction in time taken to identify the most critical alert from the dashboard.
+
+Remediation Confidence: Percentage of users who double-check the cloud console after fixing an issue. (Goal: <5% because our "Green Resolved" screen provides enough proof).
+
+Health Score Stability: Maintaining a score >90 over a 30-day period.
